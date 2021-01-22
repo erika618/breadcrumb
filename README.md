@@ -1,24 +1,46 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリ名
+breadcrumb
 
-Things you may want to cover:
+<br>
 
-* Ruby version
+# URL
+Herokuによるデプロイ
+<br>
+https://breadcrumb-20210122.herokuapp.com/
+<br>
 
-* System dependencies
+# 説明
 
-* Configuration
+`gretel`というGemを用いて、パンくずリストを表示できるアプリです。
+<br>
 
-* Database creation
+<br>
 
-* Database initialization
 
-* How to run the test suite
+# 使用しているバージョン等
 
-* Services (job queues, cache servers, search engines, etc.)
+- ruby 2.6.5
+- Rails 6.0.3.4
+- MySQL
 
-* Deployment instructions
+<br>
 
-* ...
+# clone
+```
+% git clone https://github.com/erika618/breadcrumb.git
+% cd breadcrumb
+% bundle install
+% rails db:create
+% rails db:migrate
+```
+
+<br>
+
+# その他使用しているgem・使うコマンド
+```
+<!-- rubocop（インデントを整えるため） -->
+% bundle exec rubocop -a
+
+```
